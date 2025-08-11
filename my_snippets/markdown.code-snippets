@@ -1,0 +1,18 @@
+{
+	"snip1": {
+		"prefix": "cussty",
+		"body": [
+			"::: {custom-style=\"$1\"}",
+			"$2",
+			":::$0"
+		],
+		"description": "Insert a custom-style block"
+	},
+	"snip2": {
+		"prefix": "wcomment",
+		"body": [
+			"[$1]{.comment-start id=\"$2\" author=\"Ben Moon\" date=\"$3\"}$4[]{.comment-end id=\"$2\"}$0"
+		],
+		"description": "Insert a word comment"
+	}
+}

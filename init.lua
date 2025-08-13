@@ -118,8 +118,10 @@ vim.schedule(function()
   vim.o.clipboard = 'unnamedplus'
 end)
 
--- Enable break indent
+-- Enable line breaks and indents
+vim.o.linebreak = true
 vim.o.breakindent = true
+vim.o.breakindentopt = 'shift:4'
 
 -- Save undo history
 vim.o.undofile = true
@@ -165,6 +167,14 @@ vim.o.scrolloff = 10
 -- instead raise a dialog asking if you wish to save the current file(s)
 -- See `:help 'confirm'`
 vim.o.confirm = true
+
+-- set spelling language to British English
+vim.o.spelllang = 'en_gb'
+
+-- make <TAB> a bit smaller: 4 spaces
+-- does this conflict with guess-indent below?
+vim.o.softtabstop = 4
+vim.o.shiftwidth = 4
 
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
